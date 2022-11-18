@@ -1,0 +1,10 @@
+<h4>Without Button Click</h4>
+<input type="text" #textName (input)="getName(textName.value)"> <!--(input)/(keydown)/(keyup)-->
+{{WithOutButtonClick}}
+
+
+
+<h4>With Button Click</h4>
+<input type="text" #textName1> <!--(input)/(keydown)/(keyup)-->
+<button (click)="getName1(textName1.value)">Click</button>
+{{WithButtonClick}}
