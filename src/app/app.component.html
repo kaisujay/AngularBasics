@@ -1,0 +1,21 @@
+<!-- First way -->
+<h2 *ngIf="show; else elseBlock">
+    If Works
+</h2>
+
+<ng-template #elseBlock>
+    Else Works
+</ng-template>
+
+<br/>
+
+<!-- Second way -->
+<p *ngIf="val > 8; then forIfBlock else forElseBlock"></p>
+
+<ng-template #forIfBlock>
+    For If Block
+</ng-template>
+
+<ng-template #forElseBlock>
+    For Else Block
+</ng-template>
