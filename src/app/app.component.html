@@ -1,0 +1,10 @@
+<ul *ngFor="let User of Users">
+    <li>{{User.Name}}</li>
+    <li>{{User.Age}}</li>
+    <ul *ngFor="let userSocial of User.Social">
+        <li>{{userSocial}}</li>
+    </ul>
+</ul>
+
+<!-- NOTE : using <p> or other in place of <ul> will not work
+    It will throw error in "User.Social" section-->
