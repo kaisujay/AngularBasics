@@ -1,0 +1,10 @@
+<form #basicForm="ngForm" (ngSubmit)="getFormValue(basicForm.value)">
+    <input type="text" ngModel name="txtBoxName"/> <br/> <br/>
+    <input type="text" ngModel name="txtBoxAge"/> <br/> <br/>
+
+    <button>ClickMe</button>
+</form>
+
+<h2>Display Form Values</h2>
+{{userData.txtBoxName}}
+{{userData.txtBoxAge}}
