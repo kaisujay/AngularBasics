@@ -1,0 +1,7 @@
+<h4>Reactive Form</h4>
+<form [formGroup]="userForm" (ngSubmit)="getFormValue()">
+    <input type="text" ngModel formControlName="txtBoxName"/> <br/> <br/>
+    <input type="text" ngModel formControlName="txtBoxAge"/> <br/> <br/>
+
+    <button>ClickMe</button>
+</form>
