@@ -1,0 +1,20 @@
+{{name | uppercase}} <br/> <!--SUJAY MAJUMDER-->
+{{name | lowercase}} <br/> <!--sujay majumder-->
+{{name | slice : 2 }} <br/> <!--jay Majumder-->
+{{name | slice : 2 : 4 }} <br/> <!--ja-->
+{{name | slice : 2 : 4 | uppercase}} <br/> <br/> <!--JA-->
+
+{{today}} <br/> <!--Sat Nov 19 2022 20:46:11 GMT+0530 (India Standard Time)-->
+{{today | date}} <br/> <!--Nov 19, 2022-->
+{{today | date: 'fullDate'}} <br/> <br/> <!--Saturday, November 19, 2022-->
+
+{{user}} <br/> <!--[object Object]-->
+{{user | json}} <br/> <!--{ "name": "Sujay", "age": 26 }-->
+{{user | json | uppercase}} <br/> <br/> <!--{ "NAME": "SUJAY", "AGE": 26 }-->
+
+{{0002211.62452120 | number : '2.2'}} <br/> <!--2,211.625-->
+{{0000002.62452120 | number : '0.2-5'}} <br/> <!--2.62452-->
+{{0002211.62452120 | number : '2.2-5'}} <br/> <br/> <!--2,211.62452-->
+
+{{20 | currency:'USD'}} <br/> <!--$20.00-->
+{{20 | currency:'INR'}} <br/> <br/> <!--₹20.00-->
