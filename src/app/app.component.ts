@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
+  result:any='';
+  
+  updateDataForParent(data:Event)
+  {
+    //console.warn(data);
+    this.result=data;
+  }
 }
