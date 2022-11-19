@@ -1,0 +1,10 @@
+<h2>ToDo List</h2>
+<input type="text" #textBox name="textBox">
+<button (click)="addItem(textBox.value)">Add</button>
+
+<ul *ngFor="let toDo of toDoList">
+    <li>
+        {{toDo}}
+        <button (click)="removeItem(toDo)">Remove</button>
+    </li>
+</ul>
