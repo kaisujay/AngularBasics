@@ -9,12 +9,6 @@ import { Data } from '@angular/router';
 
 
 export class AppComponent {
-  name:string = 'Sujay Majumder';
-  today:Date = new Date();
 
-  user={
-    name:'Sujay',
-    age:26
-  }
     
 }
