@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path:'aboutRoute',
     component:AboutusComponent
+  },
+  {
+    path:'**',  //This ** is the WILDCARD used for 404 : Page not found
+    component:PageNotFoundComponent
   }
 ];
 
