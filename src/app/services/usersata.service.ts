@@ -12,4 +12,9 @@ export class UsersataService {
   {
     return this.http.get("https://api.coindesk.com/v1/bpi/currentprice.json");  //API got from Internet
   }
+
+  saveUsers(data:any)
+  {
+    return this.http.post("https://api.coindesk.com/v1/bpi/currentprice.json",data);  //API got from Internet
+  }
 }
