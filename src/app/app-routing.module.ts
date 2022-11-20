@@ -14,6 +14,10 @@ const routes: Routes = [
     component:ContactusComponent
   },
   {
+    path:'contactRoute/:routeValue',  // "routeValue" is the parameter
+    component:ContactusComponent
+  },
+  {
     path:'aboutRoute',
     component:AboutusComponent
   }
